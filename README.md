@@ -1,6 +1,10 @@
 # DIC-Predict-Heart-Disease
 
-## Steps to run:
+## To access the application on Streamlit Cloud:
+
+This web application has been deployed on Streamlit Cloud. It can be accessed here: [https://harshitha-sid-dic-predict-heart-disease-welcome-kjjo7n.streamlit.app/](https://harshitha-sid-dic-predict-heart-disease-welcome-kjjo7n.streamlit.app/)
+
+## Steps to run the application locally:
 
 1. Clone the code from the Github repository
 ```

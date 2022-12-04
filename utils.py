@@ -39,8 +39,8 @@ def display_data_metrics():
 
 def display_overall_metrics():
     col1, col2, col3 = st.columns(3)
-    col1.metric("Total Rows in Test Data", "319,795")
-    col2.metric("AOC", "0.94")
+    col1.metric("Total Rows in the Data Set", "319,795")
+    col2.metric("AUC", "0.94")
     col3.metric("Accuracy", "85%")
     
 def beta_image_grid():
