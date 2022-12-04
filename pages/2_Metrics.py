@@ -9,7 +9,7 @@ st.write(
     We have uploaded some important observations or visualisations that we captured while doing this Project.
     """
 )
-tab1, tab2, tab3, tab4 = st.tabs(["Overall Metrics", "Model Metrics", "Data Metrics", "Image Grid"])
+tab1, tab2, tab3 = st.tabs(["Overall Metrics", "Model Metrics", "Data Metrics"])
 
 with tab1:
     st.header("Overall Metrics")
@@ -17,14 +17,11 @@ with tab1:
 
 with tab2:
     st.header("Model Metrics")
-    st.write("These are the visualisations that we had added for K-Nearest Neighbours Model in Phase-2.")
+    st.write("These are the visualisations generated for model metrics.")
     display_model_metrics()
-
+   
 with tab3:
     st.header("Data Metrics")
-    display_data_metrics()
-   
-with tab4:
-    st.header("Beta imagegrid")
+    st.write("These are the visualisations generated for data metrics.")
     beta_image_grid()
 

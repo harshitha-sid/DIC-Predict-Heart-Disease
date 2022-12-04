@@ -12,8 +12,7 @@ new_page_names = {
   '1_Predict Heart Disease': '1_🫀_Predict Heart Disease',
   '2_Phase-1 Report': '2_📕_Phase-1 Report',
   '3_Phase-2 Report': '3_📗_Phase-2 Report',
-  '4_Metrics': '4_📈_Metrics',
-  '5_Data_Profiliing' : '5_📊_Data_Profiliing'
+  '4_Metrics': '4_📈_Metrics'
 }
 
 for key, page in pages.items():
