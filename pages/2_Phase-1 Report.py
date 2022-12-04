@@ -5,7 +5,7 @@ st.set_page_config(page_icon="📕",page_title="Phase-1 Report")
 
 PHASE_1_PDF = "images/Phase1.pdf"
 
-@st.cache
+@st.cache(suppress_st_warning=True)
 def display_phase1_report():
     with open(PHASE_1_PDF,"rb") as f:
                 st.info("Phase 1 Report")
