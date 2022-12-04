@@ -19,7 +19,7 @@ pip3 install -r requirements.txt
 
 4. Run the web application
 ```
-streamlit run app.py --theme.base "dark"
+streamlit run Welcome.py --theme.base "dark"
 ```
 
 By default, the application will open in the browser on port 8501. Hope you will enjoy interacting with our web application 😊 !
