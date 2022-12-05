@@ -6,19 +6,6 @@ from streamlit_lottie import st_lottie
 HEART_IMAGE = "images/sidebar_heart.gif"
 lottie_url_hello = "https://assets8.lottiefiles.com/packages/lf20_hqlvpwat.json"
 
-pages = st.source_util.get_pages('Welcome.py')
-
-new_page_names = {
-  '1_Predict Heart Disease': '1_🫀_Predict Heart Disease',
-  '2_Phase-1 Report': '2_📕_Phase-1 Report',
-  '3_Phase-2 Report': '3_📗_Phase-2 Report',
-  '4_Metrics': '4_📈_Metrics'
-}
-
-for key, page in pages.items():
-  if page['page_name'] in new_page_names:
-    page['page_name'] = new_page_names[page['page_name']]
-
 st.set_page_config(layout="wide",initial_sidebar_state="collapsed",page_icon="images/heart-icon.png",page_title="App Predicting Heart Disease")
 
 st.write("# Welcome to our Heart Disease Prediction Project!👋")
@@ -46,7 +33,7 @@ with col2:
 
       You need not worry as you are in the right place ! This app can help in predicting the probability of you getting a heart disease or not within seconds.
 
-      Here, we are using Decision Tree machine learning model on a survey data of over 300k US residents collected by CDC.
+      Here, we are using a combination of machine learning models like ADA Boost, Decision tree, and KNN (k-nearest neighbors) on a survey data of over 300k US residents collected by CDC.
 
       To predict the chances of you getting a heart disease, just click on the "Predict Heart Disease" option from the sidebar and enter the parameters that best describe you. And click "Predict" button.
       
