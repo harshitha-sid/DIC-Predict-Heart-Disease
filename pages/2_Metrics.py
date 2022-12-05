@@ -24,4 +24,3 @@ with tab3:
     st.header("Data Metrics")
     st.write("These are the visualisations generated for data metrics.")
     beta_image_grid()
-
