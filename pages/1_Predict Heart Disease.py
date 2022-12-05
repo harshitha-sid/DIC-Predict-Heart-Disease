@@ -179,7 +179,7 @@ if predict_button:
         predict_heart_KNN = (pickled_DT.predict(df2))
         prediction_prob_KNN = pickled_DT.predict_proba(df2)
         
-        pickled_ada = pickle.load(open('model/model_ada.pkl', 'rb'))
+        pickled_ada = pickle.load(open('model/model_ADA.pkl', 'rb'))
         predict_heart_ada = pickled_ada.predict(df2)
         if(predict_heart_ada == 1):
             if(prediction_prob_DT > prediction_prob_KNN):
