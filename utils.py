@@ -18,7 +18,7 @@ def display_result(predict_heart_disease, prediction_prob):
         st.warning(f"🚨 You seem to have an unhealthy heart, the probabilty of you having a heart disease is {prediction_prob} %")
         unhealthy = load_lottieurl(unhealthy_heart)
         st_lottie(unhealthy, key="hello", height = 200, width = 200, quality = "high")
-        st.info("Go here to get more details on how you can get your heart right")
+        st.info("Check this video to get more details on how you can have a healthy heart. Also, please consult a physician for further analysis.")
         display_yt_video()
 
 def display_yt_video():
@@ -40,8 +40,8 @@ def display_data_metrics():
 def display_overall_metrics():
     col1, col2, col3 = st.columns(3)
     col1.metric("Total Rows in the Data Set", "319,795")
-    col2.metric("AUC", "0.94")
-    col3.metric("Accuracy", "85%")
+    col2.metric("AUC", "0.79")
+    col3.metric("Accuracy", "71.71%")
     
 def beta_image_grid():
     from itertools import cycle

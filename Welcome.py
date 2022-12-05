@@ -46,7 +46,7 @@ with col2:
 
       You need not worry as you are in the right place ! This app can help in predicting the probability of you getting a heart disease or not within seconds.
 
-      Here, we are using XGBoost machine learning model on a survey data of over 300k US residents collected by CDC.
+      Here, we are using Decision Tree machine learning model on a survey data of over 300k US residents collected by CDC.
 
       To predict the chances of you getting a heart disease, just click on the "Predict Heart Disease" option from the sidebar and enter the parameters that best describe you. And click "Predict" button.
       
