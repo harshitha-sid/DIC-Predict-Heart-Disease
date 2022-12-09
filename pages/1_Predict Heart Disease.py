@@ -187,8 +187,8 @@ if predict_button:
 #             print(predict_heart_DT)
 #             print(predict_heart_KNN)
             if(pred_DT > pred_KNN):
-                display_result(1, {round(prediction_prob_DT[0][1] * 100, 2)})
+                display_result(1, round(prediction_prob_DT[0][1] * 100, 2))
             else:
-                display_result(1, {round(prediction_prob_KNN[0][1] * 100, 2)})
+                display_result(1, round(prediction_prob_KNN[0][1] * 100, 2))
         else:
-            display_result(predict_heart_ada, {round(prediction_prob_DT[0][1] * 100, 2)})
+            display_result(predict_heart_ada, round(prediction_prob_DT[0][1] * 100, 2))
