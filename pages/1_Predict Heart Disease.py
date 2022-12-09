@@ -181,10 +181,13 @@ if predict_button:
         
         pickled_ada = pickle.load(open('model/model_ADA.pkl', 'rb'))
         predict_heart_ada = pickled_ada.predict(df2)
-        if(predict_heart_ada == 1):
-            if(prediction_prob_DT[0][1] > prediction_prob_KNN[0][1]):
-                display_result(predict_heart_ada, round(prediction_prob_DT[0][1] * 100, 2))
+        if(predict_heart_ada == 1 or predict_heart_DT == 1 or predict_heart_KNN == 1):
+#             print(predict_heart_ada)
+#             print(predict_heart_DT)
+#             print(predict_heart_KNN)
+            if(pred_DT > pred_KNN):
+                display_result(1, {round(prediction_prob_DT[0][1] * 100, 2)})
             else:
-                display_result(predict_heart_ada, round(prediction_prob_KNN[0][1] * 100, 2))
+                display_result(1, {round(prediction_prob_KNN[0][1] * 100, 2)})
         else:
-            display_result(predict_heart_ada, round(prediction_prob_DT[0][1] * 100, 2))
+            display_result(predict_heart_ada, {round(prediction_prob_DT[0][1] * 100, 2)})
